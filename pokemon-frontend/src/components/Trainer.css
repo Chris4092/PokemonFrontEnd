@@ -27,3 +27,7 @@
     max-width: 400px;
 
 }
+
+.selected-trainer{
+    background-color: lightgreen;
+}

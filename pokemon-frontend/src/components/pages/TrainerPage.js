@@ -6,6 +6,19 @@ import {useEffect} from "react";
 
 export default function TrainerPage() {
 
+    const [id, setId] = useState(-1)
+
+    const select = (idP) =>{
+        if(idP === id)
+        {
+            setId(-1)
+        }
+        else
+        {
+            setId(idP)
+        }
+    }
+
     const [allProducts, setProductsState] = useState([])
 
     async function getData(url = '')
@@ -23,7 +36,7 @@ export default function TrainerPage() {
 
     useEffect(() => {
         getData('/api/trainer').then((data) => setProductsState(data))
-    }, [])
+    }, [id])
 
     console.log(allProducts)
     const hasProducts = allProducts.length > 0
@@ -31,7 +44,7 @@ export default function TrainerPage() {
     return   (<div>
         <button onClick={event =>  window.location.href='/add-trainer'} className={"center"}><h2 className={"button"}>Create a custom trainer</h2></button>
         <div>
-            {hasProducts ? <TrainerList key={allProducts} products={allProducts} /> : "Try adding some custom trainers..."}
+            {hasProducts ? <TrainerList key={allProducts} products={allProducts} action={select} id={id} /> : "Try adding some custom trainers..."}
         </div>
     </div>)
 

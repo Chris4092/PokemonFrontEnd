@@ -59,9 +59,6 @@ const AddTrainerPage = (props) => {
     const [allProducts, setProductsState] = useState([])
 
 
-    useEffect(() => {
-        getData('/api/pokemon/with-moves').then((data) => setProductsState(data))
-    }, [])
 
 
 
@@ -85,8 +82,15 @@ const AddTrainerPage = (props) => {
         const array2 = idList;
         array2.push(idP)
         setIdList(array2)
+
+
+
     }
 
+
+    useEffect(() => {
+        getData('/api/pokemon/with-moves').then((data) => setProductsState(data))
+    }, [selectPokemon])
     return (
         <div>
             <div className={"trainer-center"}>

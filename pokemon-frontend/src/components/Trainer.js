@@ -13,7 +13,9 @@ const Trainer = (props) => {
         .sort((a,b) => a.id < b.id ? 1 : -1)
 
 
-    return <div className={"trainer-center-div"}>
+
+
+    return <div onClick={props.action.bind(this,props.product.id)} className={props.id === props.product.id ? "selected-trainer trainer-center-div" : "trainer-center-div"}>
         <div className={"trainer-name"}>
             {props.product.name}, Trainer No. {props.product.number}
         </div>
