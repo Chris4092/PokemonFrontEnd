@@ -1,0 +1,49 @@
+.split{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.topv2{
+    margin-top: 2%;
+}
+
+.marg{
+    margin-left: 5%;
+}
+
+.button{
+    text-align: center;
+
+}
+
+.center{
+    margin-top: 5%;
+    align-content: center;
+    background-color: lightblue;
+}
+
+button:hover{
+    background-color: lightcyan;
+}
+
+button:focus{
+    background-color: cyan;
+}
+
+.line{
+    display: flex;
+
+}
+
+.restrict-size{
+    max-width: 40%;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.space{
+    margin-left: 10px;
+    padding: 5px;
+}

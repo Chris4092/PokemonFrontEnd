@@ -1,0 +1,47 @@
+.trainer-center{
+    align-content: center;
+    margin: 2% auto auto;
+}
+
+.trainer-title{
+    font-size: 32px;
+    text-align: center;
+}
+
+.add-trainer-name{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-trainer-pokemons{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-trainer-name-text{
+    font-size: 20px;
+    margin-left: -10px;
+}
+
+.add-trainer-name-input{
+    max-width: 200px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+
+.add-trainer-button{
+    margin-top: 5%;
+    align-content: center;
+    background-color: lightblue;
+}
+
+.add-trainer-button-holder{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
