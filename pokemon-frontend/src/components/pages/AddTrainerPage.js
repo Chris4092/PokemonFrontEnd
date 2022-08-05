@@ -82,10 +82,9 @@ const AddTrainerPage = (props) => {
         const array2 = idList;
         array2.push(idP)
         setIdList(array2)
-
-
-
     }
+
+    // const deleteTrainer = (idTrainer)
 
 
     useEffect(() => {
@@ -113,6 +112,7 @@ const AddTrainerPage = (props) => {
             <div className={"add-trainer-button-holder"}>
                 {idList.length > 0 && <button onClick={async() => { await handleTrainerToPokemon()}} className={"add-trainer-button"}><h1>Add trainer</h1></button>}
             </div>
+
         </div>
     )
 }
