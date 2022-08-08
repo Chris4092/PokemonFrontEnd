@@ -14,7 +14,7 @@ const PokemonWithMoves = (props) => {
         .sort((a,b) => a.id < b.id ? 1 : -1)
     let sprite = "pokemon/" + props.product.imageSprite
     return(
-        <tr onClick={props.action.bind(this,props.product.id)} className={props.idList.some(item => item === props.product.id) ? "selected" : ""}>
+        <tr onClick={props.action.bind(this,props.product.id)} className={props.idList.some(item => item === props.product.id) || props.id===props.product.id ? "selected" : ""}>
             <td><img src={sprite} alt={"sprite"}/> </td>
             <td>{props.product.name}</td>
             {!has2types && <td colSpan={2} className={type1Style}> {type1} </td>}

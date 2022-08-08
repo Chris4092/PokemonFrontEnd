@@ -22,9 +22,15 @@ const Trainer = (props) => {
         <div className={"trainer-pokemon"}>
             List of pokemon
         </div>
-        <div className={"pokemon-list"}>
-            <PokemonWithMovesList key={myPokemons} products={myPokemons} action={empty} idList={[]}></PokemonWithMovesList>
-        </div>
+        {   myPokemons.length > 0 ?
+            <div className={"pokemon-list"}>
+                <PokemonWithMovesList key={myPokemons} products={myPokemons} action={empty}
+                                      idList={[]}></PokemonWithMovesList>
+            </div> :
+            <div className={"trainer-pokemon"}>
+                Oh no! This trainer's pokemon were all deleted!
+            </div>
+        }
     </div>
 
 }

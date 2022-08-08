@@ -106,7 +106,7 @@ const AddTrainerPage = (props) => {
                     <div className={"add-trainer-name-text"}>Select up to 6 pokemon</div>
                 </div>
                 <div className={"add-trainer-pokemons"}>
-                    <PokemonWithMovesList key={allProducts} products={allProducts} action={selectPokemon} idList={idList}/>
+                    <PokemonWithMovesList key={allProducts} products={allProducts} action={selectPokemon} idList={idList} id={-1}/>
                 </div>
             </div>
             <div className={"add-trainer-button-holder"}>

@@ -116,12 +116,12 @@ const AddMovesToPokemonPage = (props) => {
 
     useEffect(() => {
         getData('/api/pokemon/without-moves').then((data) => setProductsState(data))
-    }, [id, select])
+    }, [select])
 
 
     useEffect(() => {
         getData('/api/move').then((data) => setProductsState2(data))
-    }, [idList, selectMove])
+    }, [selectMove])
 
 
 

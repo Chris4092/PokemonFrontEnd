@@ -23,7 +23,7 @@ const PokemonWithMovesList = (props) => {
                 <th>Level</th>
             </tr>
             {props.products.map((product) => {
-                return <PokemonWithMoves product={product} action={props.action} idList={props.idList}/>
+                return <PokemonWithMoves product={product} action={props.action} idList={props.idList} id={props.id}/>
             })}
             </tbody>
         </table>

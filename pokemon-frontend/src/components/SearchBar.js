@@ -50,7 +50,7 @@ const SearchBar = (props) => {
             <div className={"top"}>
                 {shouldDisplayMoveList && <MoveList  products={filteredProducts} action={empty} idList={[]}/>}
                 {shouldDisplayPokemonList && <PokemonList  products={filteredProducts} action={empty} id={-1} hasLevel={false}/>}
-                {shouldDisplayPokemonWithMovesList && <PokemonWithMovesList  products={filteredProducts} action={empty} idList={[]}/>}
+                {shouldDisplayPokemonWithMovesList && <PokemonWithMovesList  products={filteredProducts} action={props.action} idList={[]} id={props.id}/>}
             </div>
 
         </div>
