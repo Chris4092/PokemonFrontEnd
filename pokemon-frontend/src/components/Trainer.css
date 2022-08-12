@@ -1,0 +1,33 @@
+.trainer-center-div{
+    margin: 2% auto;
+}
+
+.trainer-name{
+    font-size: 32px;
+    text-align: center;
+}
+
+.trainer-description{
+
+}
+
+.trainer-pokemon{
+    font-size: 24px;
+    text-align: center;
+}
+
+.pokemon-list{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+
+}
+
+.selected-trainer{
+    background-color: lightgreen;
+}

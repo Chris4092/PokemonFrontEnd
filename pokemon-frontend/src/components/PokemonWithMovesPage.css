@@ -1,0 +1,40 @@
+.button{
+    text-align: center;
+
+}
+
+.centerAll{
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    margin-top: 5%;
+    align-content: center;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+button:hover{
+    background-color: lightcyan;
+}
+
+button:focus{
+    background-color: cyan;
+}
+
+.delete-pokemon-button{
+    margin-top: 5%;
+    align-content: center;
+    background-color: lightblue;
+}
+
+.delete-pokemon-button-holder{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
