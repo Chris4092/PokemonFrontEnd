@@ -4,7 +4,7 @@
 
 
 
-![Logo](https://github.com/Chris4092/PokemonFrontEnd/blob/backend/misc/Logo.jpg?raw=true)
+![Logo](https://github.com/Chris4092/PokemonFrontEnd/blob/frontend/misc/Logo.jpg?raw=true)
 
 
 ## Description
